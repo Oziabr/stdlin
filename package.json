@@ -1,0 +1,14 @@
+{
+  "name": "stdlin",
+  "version": "1.0.0",
+  "description": "stdin line-by-line processor",
+  "main": "index.js",
+  "scripts": {
+    "test": "time node test/gen.js | node index.js | uniq -c; time node test/gen.js | node indexFor.js | uniq -c; time node test/gen.js | node indexRep.js | uniq -c; time node test/gen.js | node indexSli.js | uniq -c"
+  },
+  "author": "Yury Tvardovsky <oziabr@google.com> (http://oziabr.info)",
+  "license": "ISC",
+  "dependencies": {
+    "split": "^1.0.1"
+  }
+}
